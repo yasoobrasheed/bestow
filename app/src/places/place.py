@@ -1,3 +1,4 @@
+from src.places.services.foursquare_places_service import query_place
 class Place():
 
     def __init__(self, latitude, longitude):
@@ -5,6 +6,6 @@ class Place():
         self.longitude = longitude
 
     def get_location(self):
-        return f"{self.latitude}, {self.longitude}"
+        return query_place(self.latitude, self.longitude)
 
     

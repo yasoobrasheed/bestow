@@ -1,5 +1,9 @@
 # Python
 __pycache__/
 
+# Environment
+.env.local
+.env
+
 # Miscellaneous
 *.DS_Store
