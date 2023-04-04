@@ -17,6 +17,8 @@ def query_place(latitude, longitude):
         "exclude_chains": True
     }
 
+    # TODO: near me: bars, restaurants, museums, park, shopping, rank based on rating / distanct or slice
+    
     response = requests.get(url, headers=headers, params=params)
     response_json = json.loads(response.text)
     results = format_results(response_json['results'])
